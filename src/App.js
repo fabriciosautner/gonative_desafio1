@@ -1,18 +1,8 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import './config/ReactotronConfig';
+import '~/config/ReactotronConfig';
 import './config/DevToolsConfig';
-
-export default class App extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Welcome to React Native!</Text>
-      </View>
-    );
-  }
-}
 
 const styles = StyleSheet.create({
   container: {
@@ -22,3 +12,15 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5FCFF',
   },
 });
+
+export default class App extends Component {
+  state = {};
+
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text>Welcome to React Native!</Text>
+      </View>
+    );
+  }
+}
